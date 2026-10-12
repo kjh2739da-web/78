@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- 카카오톡 썸네일(Open Graph) 설정 -->
+    <meta property="og:title" content="끝까지 굳게 잡으라 - 부곡서부교회 주일예배">
+    <meta property="og:description" content="본문: 요한계시록 2:18-29 | 불꽃 같은 주님의 시선 앞에서 세상과의 타협을 단호히 끊어내고 믿음을 굳게 잡으라.">
+    <meta property="og:image" content="https://img.youtube.com/vi/DK_xomEsNbA/hqdefault.jpg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://(여기에 깃허브 배포 주소를 입력하세요)">
+
+    <title>부곡서부교회 주일 예배 스터디 카드</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --primary: #16a34a; --primary-light: #dcfce7; --primary-dark: #14532d;
+            --bg: #f1f5f9; --app-bg: #f8fafc; 
+        }
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; } 
+        body { background-color: var(--bg); margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100dvh; font-family: 'Noto Sans KR', sans-serif; overflow: hidden; }
+        .app-container { width: 100vw; height: 100dvh; background-color: var(--app-bg); display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; }
+        .app-container::-webkit-scrollbar { display: none; }
+        @media (min-width: 768px) { .app-container { width: 450px; height: 90vh; border-radius: 2.5rem; border: 10px solid #1e293b; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3); } }
+        
+        .slide-section { flex: 0 0 100%; width: 100%; height: 100%; scroll-snap-align: start; scroll-snap-stop: always; display: flex; flex-direction: column; position: relative; overflow: hidden; background: white; }
+        .section-content { flex: 1; overflow-y: auto; padding: 3rem 1.5rem 2rem 1.5rem; display: flex; flex-direction: column; gap: 1.5rem; }
+        .section-content::-webkit-scrollbar { display: none; }
+        
+        .nav-footer { flex-shrink: 0; padding: 1.2rem 1.5rem; background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(15px); display: flex; justify-content: space-between; gap: 1rem; border-top: 1px solid #e2e8f0; z-index: 40; }
+        .btn-nav { padding: 0.9rem 1rem; border-radius: 1.2rem; font-weight: 700; font-size: 0.95rem; flex: 1; text-align: center; cursor: pointer; border: none; transition: 0.3s; }
+        .btn-next { background-color: var(--primary); color: white; }
+        .btn-prev { background-color: #f1f5f9; color: #64748b; border: 1px solid #e2e8f0; }
+        
+        .detail-text { font-size: 1.15rem; line-height: 1.8; color: #334155; word-break: keep-all; }
+        .video-wrapper { position: relative; padding-bottom: 56.25%; border-radius: 1rem; overflow: hidden; background: #000; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
+        .video-wrapper iframe { position: absolute; inset: 0; width: 100%; height: 100%; }
+        
+        .badge { display: inline-block; padding: 0.3rem 0.8rem; background-color: var(--primary-light); color: var(--primary-dark); font-weight: 700; border-radius: 2rem; font-size: 0.85rem; margin-bottom: 1rem; }
+        .card { background: white; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); border: 1px solid #f1f5f9; }
+        
+        .mask-word { background: #e2e8f0; color: #e2e8f0; padding: 0 4px; border-radius: 4px; cursor: pointer; transition: 0.3s; }
+        .mask-word:active { background: transparent; color: var(--primary-dark); font-weight: bold; }
+
+        @media print {
+            body, html { background: white !important; overflow: visible !important; height: auto !important; }
+            .app-container { display: block !important; width: 100% !important; border: none !important; box-shadow: none !important; }
+            .slide-section { page-break-after: always !important; height: auto !important; display: block !important; border-bottom: 1px solid #eee; padding-bottom: 2rem; }
+            .nav-footer, .btn-nav { display: none !important; }
+            .section-content { padding: 1rem 0 !important; overflow: visible !important; }
+            .card { box-shadow: none !important; border: 1px solid #ddd !important; break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container" id="app">
+
+        <div class="slide-section" id="sec1">
+            <div class="section-content">
+                <div>
+                    <span class="badge">부곡서부교회 2026년 10월 11일 주일</span>
+                    <h1 class="text-3xl font-bold text-gray-800 font-[Nanum_Myeongjo] leading-tight mb-2">끝까지 굳게 잡으라</h1>
+                    <p class="text-gray-500 font-medium">본문: 요한계시록 2:18-29</p>
+                </div>
+                <div class="video-wrapper mt-4">
+                    <iframe src="https://www.youtube.com/embed/DK_xomEsNbA" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="card mt-4 bg-[var(--primary-light)] border-none">
+                    <p class="text-[var(--primary-dark)] font-bold text-center">"세상과의 타협을 단호히 끊어내고 영원한 상급이신 주님을 끝까지 굳게 잡으십시오."</p>
+                </div>
+            </div>
+            <div class="nav-footer">
+                <button class="btn-nav btn-next w-full" onclick="scrollToSec('sec2')">설교 강해 보기 ➔</button>
+            </div>
+        </div>
+
+        <div class="slide-section" id="sec2">
+            <div class="section-content">
+                <span class="badge">Sermon Outline</span>
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-[var(--primary)] pb-2 inline-block mb-4">설교 강해</h2>
+                
+                <div class="space-y-4">
+                    <div class="card">
+                        <h3 class="font-bold text-lg mb-1">서론</h3>
+                        <p class="text-gray-600">부모의 잔소리처럼, 주님의 말씀은 우리의 영혼을 살리기 위한 유익한 말씀입니다. 영혼의 멸망을 자초하지 않으려면 주님의 절박한 음성에 무릎 꿇고 돌이켜야 합니다.</p>
+                    </div>
+                    <div class="card border-l-4 border-[var(--primary)]">
+                        <h3 class="font-bold text-lg mb-1">Point 1. 불꽃 같은 눈 앞에서 사명을 감당하라</h3>
+                        <p class="text-gray-600">주님은 영과 혼, 숨은 동기까지 꿰뚫어 보시며, 진실되게 살아가는 성도를 지키십니다. 세상의 직분과 비교할 수 없는 거룩한 사명을 사랑과 인내로 감당합시다.</p>
+                    </div>
+                    <div class="card border-l-4 border-[var(--primary)]">
+                        <h3 class="font-bold text-lg mb-1">Point 2. 이세벨주의와 타협하지 말라</h3>
+                        <p class="text-gray-600">당장의 이익과 편리를 위해 세상과 타협하는 혼합주의(이세벨주의)를 배격해야 합니다. '어쩔 수 없다'는 핑계로 육신의 안락을 추구하다 영혼을 팔아서는 안 됩니다.</p>
+                    </div>
+                    <div class="card border-l-4 border-[var(--primary)]">
+                        <h3 class="font-bold text-lg mb-1">Point 3. 끝까지 믿음을 지킨 자의 약속</h3>
+                        <p class="text-gray-600">타협을 거부하고 끝까지 완주하는 자에게는 세상을 압도하는 '만국 통치의 권세'와 영원한 상급이신 '새벽별(예수님)'을 주시겠다고 약속하셨습니다.</p>
+                    </div>
+                    <div class="card bg-gray-50">
+                        <h3 class="font-bold text-lg mb-1">결론</h3>
+                        <p class="text-gray-600">세상 모든 것을 가진 자보다 하나님을 자기 하나님으로 삼은 자가 가장 부유합니다. 세상과 한눈팔지 말고 푯대를 향해 굳게 나아가십시오.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-footer">
+                <button class="btn-nav btn-prev" onclick="scrollToSec('sec1')">이전</button>
+                <button class="btn-nav btn-next" onclick="scrollToSec('sec3')">성서 주해 ➔</button>
+            </div>
+        </div>
+
+        <div class="slide-section" id="sec3">
+            <div class="section-content">
+                <span class="badge">Deep Exegesis</span>
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-[var(--primary)] pb-2 inline-block mb-4">본문 깊이 읽기</h2>
+                <div class="card">
+                    <p class="detail-text">
+                        요한계시록 2장 18절 이하에 등장하는 두아디라 교회는 사랑과 믿음, 섬김과 인내라는 훌륭한 신앙적 행위를 칭찬받은 교회입니다. 그러나 상업 도시라는 지역적 특성 속에서 길드(상인 조합)에 소속되기 위해 우상 숭배와 신전 음행에 참여하는 것을 용납하는 치명적인 죄를 범했습니다. 본문에서 주님은 '불꽃 같은 눈'과 '빛난 주석 같은 발'을 가지신 심판주로 묘사되며, 이는 교회 내의 거짓된 타협(이세벨주의)을 꿰뚫어 보시고 엄위하게 심판하실 것임을 경고하는 것입니다. 영지주의적 이원론을 바탕으로 육신의 행동은 영혼에 영향을 주지 못한다는 거짓 선지자 이세벨의 가르침은 오늘날에도 교묘한 혼합주의로 성도들을 위협합니다. 궁극적으로 주님은 이 거짓 가르침을 거부하고 끝까지 진리를 지키는 자에게 '새벽별'이신 그리스도 자신을 주시겠다고 약속하심으로써, 경제적 이익보다 영적 순결을 지키는 것이 진정한 승리임을 역설하십니다.
+                    </p>
+                </div>
+            </div>
+            <div class="nav-footer">
+                <button class="btn-nav btn-prev" onclick="scrollToSec('sec2')">이전</button>
+                <button class="btn-nav btn-next" onclick="scrollToSec('sec4')">원어 탐구 ➔</button>
+            </div>
+        </div>
+
+        <div class="slide-section" id="sec4">
+            <div class="section-content">
+                <span class="badge">Lexicon</span>
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-[var(--primary)] pb-2 inline-block mb-4">성서 원어 탐구</h2>
+                <div class="space-y-4">
+                    <div class="card">
+                        <div class="text-[var(--primary)] font-bold text-lg">φλὸξ (phlox / 플록스)</div>
+                        <div class="text-xl font-bold">불꽃, 타오르는 불</div>
+                        <p class="text-gray-600">주님의 불꽃 같은 눈(18절)에 쓰인 단어로, 어둠 속의 숨겨진 죄악까지 남김없이 꿰뚫어 보시는 주님의 통찰력과 소멸하는 거룩한 심판을 상징합니다.</p>
+                    </div>
+                    <div class="card">
+                        <div class="text-[var(--primary)] font-bold text-lg">Ἰεζάβελ (Iezabel / 이에자벨)</div>
+                        <div class="text-xl font-bold">이세벨</div>
+                        <p class="text-gray-600">북이스라엘에 바알 숭배를 조장했던 구약의 왕비 이름에서 차용되었습니다. 본문에서는 교회 내에서 우상 숭배와 세상과의 타협을 합리화하던 거짓 선지자를 의미합니다.</p>
+                    </div>
+                    <div class="card">
+                        <div class="text-[var(--primary)] font-bold text-lg">ἀστὴρ ὁ πρωϊνός (aster ho proinos / 아스테르 호 프로이노스)</div>
+                        <div class="text-xl font-bold">새벽별 (샛별)</div>
+                        <p class="text-gray-600">칠흑 같은 어둠을 뚫고 가장 먼저 떠오르는 별로, 요한계시록 22:16에서 명시하듯 궁극적인 승리자이자 우리의 영원한 상급이 되시는 예수 그리스도를 가리킵니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-footer">
+                <button class="btn-nav btn-prev" onclick="scrollToSec('sec3')">이전</button>
+                <button class="btn-nav btn-next" onclick="scrollToSec('sec5')">QT 묵상 ➔</button>
+            </div>
+        </div>
+
+        <div class="slide-section" id="sec5">
+            <div class="section-content">
+                <span class="badge">Quiet Time</span>
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-[var(--primary)] pb-2 inline-block mb-4">말씀 묵상 (4 Step)</h2>
+                <div class="space-y-4">
+                    <div class="card">
+                        <h3 class="font-bold text-[var(--primary)] mb-2">👀 관찰</h3>
+                        <p class="text-gray-800 font-medium">두아디라 교회가 주님께 칭찬받은 내용과 책망받은 '이세벨의 교훈'은 각각 무엇이었나요?</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="font-bold text-[var(--primary)] mb-2">💡 해석</h3>
+                        <p class="text-gray-800 font-medium">왜 당시 두아디라의 많은 성도들은 믿음을 저버리고 거짓 선지자 이세벨의 가르침(혼합주의)을 쉽게 용납하고 따라갔을까요?</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="font-bold text-[var(--primary)] mb-2">❤️ 적용</h3>
+                        <p class="text-gray-800 font-medium">최근 나의 삶 속에서 "어쩔 수 없다"는 핑계로 세상의 방식과 타협하거나 신앙을 양보한 적은 없습니까?</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="font-bold text-[var(--primary)] mb-2">🔥 결단</h3>
+                        <p class="text-gray-800 font-medium">당장의 이익과 편리함보다 주님의 기쁨을 구하기 위해, 오늘 내가 단호히 끊어내야 할 타협의 자리는 어디입니까?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-footer">
+                <button class="btn-nav btn-prev" onclick="scrollToSec('sec4')">이전</button>
+                <button class="btn-nav btn-next" onclick="scrollToSec('sec6')">5단계 실천 ➔</button>
+            </div>
+        </div>
+
+        <div class="slide-section" id="sec6">
+            <div class="section-content">
+                <span class="badge">Action Plan</span>
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-[var(--primary)] pb-2 inline-block mb-4">삶의 변화를 위한 5단계</h2>
+                <div class="space-y-3">
+                    <div class="card flex gap-3">
+                        <div class="bg-[var(--primary-light)] text-[var(--primary-dark)] px-3 py-1 rounded-lg font-bold shrink-0">1</div>
+                        <p class="text-gray-700 pt-1">불의한 상황 앞에서 "어쩔 수 없다"는 변명 대신 "주님 뜻대로"라고 입술로 고백하기</p>
+                    </div>
+                    <div class="card flex gap-3">
+                        <div class="bg-[var(--primary-light)] text-[var(--primary-dark)] px-3 py-1 rounded-lg font-bold shrink-0">2</div>
+                        <p class="text-gray-700 pt-1">직장이나 사회생활 속에서 신앙적 양심을 굽히게 만드는 모임이나 자리 피하기</p>
+                    </div>
+                    <div class="card flex gap-3">
+                        <div class="bg-[var(--primary-light)] text-[var(--primary-dark)] px-3 py-1 rounded-lg font-bold shrink-0">3</div>
+                        <p class="text-gray-700 pt-1">나를 유혹하는 혼합주의적 습관(세속적 미디어 시청 등) 한 가지를 단호히 끊어내기</p>
+                    </div>
+                    <div class="card flex gap-3">
+                        <div class="bg-[var(--primary-light)] text-[var(--primary-dark)] px-3 py-1 rounded-lg font-bold shrink-0">4</div>
+                        <p class="text-gray-700 pt-1">영혼을 살리시려는 부모님이나 영적 리더의 권면을 잔소리가 아닌 사랑의 음성으로 듣기</p>
+                    </div>
+                    <div class="card flex gap-3">
+                        <div class="bg-[var(--primary-light)] text-[var(--primary-dark)] px-3 py-1 rounded-lg font-bold shrink-0">5</div>
+                        <p class="text-gray-700 pt-1">세상의 소유를 부러워하지 않고, 매일 아침 '새벽별'이신 예수님 한 분만으로 만족함을 찬양하기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-footer">
+                <button class="btn-nav btn-prev" onclick="scrollToSec('sec5')">이전</button>
+                <button class="btn-nav btn-next" onclick="scrollToSec('sec7')">말씀 암송 ➔</button>
+            </div>
+        </div>
+
+        <div class="slide-section" id="sec7">
+            <div class="section-content flex flex-col justify-center text-center">
+                <span class="badge mx-auto">Memory Verse</span>
+                <h2 class="text-2xl font-bold text-gray-800 mb-8">이번 주 암송 구절</h2>
+                <div class="card py-8 px-6 border-2 border-[var(--primary-light)]">
+                    <p class="text-xl leading-loose font-medium text-gray-800">
+                        다만 너희에게 있는 것을 내가 올 때까지 <span class="mask-word">굳게 잡으라</span> <span class="mask-word">이기는 자</span>와 끝까지 내 일을 지키는 그에게 만국을 다스리는 <span class="mask-word">권세</span>를 주리니
+                    </p>
+                    <p class="mt-8 font-bold text-[var(--primary-dark)] text-lg">(요한계시록 2:25-26)</p>
+                </div>
+                <p class="text-gray-500 mt-8 text-sm">빈칸의 키워드를 터치하며 말씀을 묵상해 보세요.</p>
+            </div>
+            <div class="nav-footer">
+                <button class="btn-nav btn-prev" onclick="scrollToSec('sec6')">이전</button>
+                <button class="btn-nav bg-gray-800 text-white" onclick="scrollToSec('sec1')">처음으로 ↺</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function scrollToSec(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // 마스크 워드 터치 이벤트
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.mask-word').forEach(word => {
+                word.addEventListener('click', function() {
+                    this.style.background = 'transparent';
+                    this.style.color = 'var(--primary-dark)';
+                    this.style.fontWeight = 'bold';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
